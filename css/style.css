@@ -54,6 +54,7 @@ body{
    font-size: 20px;
    border:1px;
    text-align: center;
+   cursor: pointer;
 }
 /* quand on clique sur le bouton  */
 
@@ -94,7 +95,6 @@ h2{
 
 @media screen and (max-width:375px){
    body{
-     height:100vh;
-     padding:10px;   
+     height:100vh;  
 }
 }
