@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* on centre les elements au milieu  */
+    height: 100vh;
+    max-width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color:aquamarine;
+}
+
+/* alignement des elements */
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color:#222222;
+    padding:15px;
+    box-shadow: 0 5px black;
+
+}
+#ecran{
+    width: 100%;
+    height:70px;
+    background:rgb(79, 248, 178);
+    margin-bottom: 10px;
+    border-radius:5px;
+
+    /* alignement de l'affichage */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding:5px;
+    font-size: 18px;
+}
+.touches{
+    display: grid;
+    grid-template-columns:repeat(4,50px);
+    grid-template-rows: repeat(5,50px);
+    gap: 8px;
+}
+
+.button{
+   border: none;
+   outline: none;
+   border-radius: 5px;
+   background-color: #f7f7f7;
+   box-shadow: 0 3px #a8a8a8;  
+   font-size: 20px;
+   border:1px;
+   text-align: center;
+}
+/* quand on clique sur le bouton  */
+
+span:active{
+    box-shadow: 0 1px #a8a8a8;
+    transform: translateY(2px);
+}
+
+.clear{
+    background-color: #ff9900;
+    font-weight: bold;
+    color: white;
+}
+
+.egal{
+    background-color:#36e700;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    grid-column:span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#memoire{
+    top:5px;
+    left:20px;
+    display:none;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-size:20px;
+    margin-bottom:5px;
+}
+
+@media screen and (max-width:375px){
+   body{
+     height:100vh;
+     padding:10px;   
+}
+}
