@@ -11,7 +11,6 @@ let operation = null;
 window.onload = () => {
   //on verifie la touche clicker
   let touches = document.querySelectorAll("span");
-  console.log(touches);
   for (let touche of touches) {
     touche.addEventListener("click", gestionTouche);
   }
